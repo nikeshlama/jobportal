@@ -34,10 +34,10 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
-import com.theakatsuki.hiredevelopers.Adapter.MessageAdapter;
-import com.theakatsuki.hiredevelopers.Model.Chat;
-import com.theakatsuki.hiredevelopers.Model.User;
-import com.theakatsuki.hiredevelopers.R;
+import com.nikesh.jobportal.Adapter.MessageAdapter;
+import com.nikesh.jobportal.Model.Chat;
+import com.nikesh.jobportal.Model.User;
+import com.nikesh.jobportal.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;
