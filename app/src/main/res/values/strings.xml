@@ -1,6 +1,32 @@
 <resources>
-    <string name="app_name">JobPortal</string>
+    <string name="app_name">HireDevelopers</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_my_network">My network</string>
+    <string name="title_post">Post</string>
+    <string name="title_notifications">Notification</string>
+    <string name="title_development">Browse</string>
+    <string name="title_register">Register user</string>
+    <string name="title_login">Login</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_edit">Edit Profile</string>
+    <string name="title_followers">followers</string>
+    <string name="strcont">Content Writing</string>
+
+    <string name="strdesn">Design and development</string>
+
+    <string name="strillu">Illustrator</string>
+
+    <string name="strsales">Sales and marketting</string>
+
+    <string name="strtutor">Tutoring</string>
+
+    <string name="strweb">website development</string>
+    <string name="strdash">Dashboard</string>
+    <string name="Follow">Follow</string>
+    <string name="Following">Following</string>
+    <string name="title_content">Welcome to Hire developers were we solve the problems that you are facing</string>
+    <string name="add_event_hint">What is on your mind? </string>
+    <string name="confirmPassword">Confirm password </string>
+    <string name="editProfile">Edit profile </string>
+
 </resources>

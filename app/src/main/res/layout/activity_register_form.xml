@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#fff"
+    tools:context="com.nikesh.jobportal.Activity.RegisterForm">
+
+    <!--    <TextView-->
+    <!--        android:layout_width="fill_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:gravity="center"-->
+    <!--        android:padding="10dp"-->
+    <!--        android:text="Register Page"-->
+    <!--        android:textColor="#000"-->
+    <!--        android:textSize="30sp"-->
+    <!--        android:textStyle="bold" />-->
+
+    <!--    <View-->
+    <!--        android:layout_width="fill_parent"-->
+    <!--        android:layout_height="1px"-->
+    <!--        android:background="@color/black" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/signup"
+            android:layout_margin="6dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_design"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="Full Name"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="18dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/country"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_design"
+            android:drawableLeft="@drawable/ic_baseline_place_24"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="Country"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#000000" />
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_design"
+            android:drawableLeft="@drawable/ic_baseline_smartphone_24"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18dp"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#000000" />
+
+        <EditText
+            android:id="@+id/Bio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_design"
+            android:drawableLeft="@drawable/contact_24"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="About yourself"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#000000" />
+
+        <EditText
+            android:id="@+id/workPlace"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_design"
+            android:drawableLeft="@drawable/ic_baseline_work_24"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="Currently Working"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#000000" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_design"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#000000" />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_design"
+            android:drawableLeft="@drawable/password_24"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18dp"/>
+        <LinearLayout
+            android:id="@+id/programmingList"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Your interests"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <CheckBox
+                android:id="@+id/chkWebsiteDev"
+                android:layout_width="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold"
+                android:text="@string/strcont"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="InvalidId" />
+            <CheckBox
+                android:id="@+id/chkDesignDev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:textStyle="bold"
+                android:text="@string/strdesn"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+            <CheckBox
+                android:id="@+id/chkContentDev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:textStyle="bold"
+                android:text="@string/strillu"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="InvalidId" />
+            <CheckBox
+                android:id="@+id/chkMarketingDev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:textStyle="bold"
+                android:text="@string/strsales"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="InvalidId" />
+            <CheckBox
+                android:id="@+id/chkMobileDev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:textStyle="bold"
+                android:text="@string/strtutor"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="InvalidId" />
+            <CheckBox
+                android:id="@+id/chkDataDev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold"
+                android:text="@string/strweb"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="InvalidId" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#000000" />
+
+        <!--    <CheckBox-->
+        <!--        android:id="@+id/terms_conditions"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="7dp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        android:text="Terms and Condition"-->
+        <!--        android:textColor="@color/black"-->
+        <!--        android:textSize="16sp" />-->
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_selector"
+            android:padding="3dp"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Already got an account?"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

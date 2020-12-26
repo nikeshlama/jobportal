@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "606268850370",
+    "project_id": "jobportal-cdcfb",
+    "storage_bucket": "jobportal-cdcfb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606268850370:android:47d57b72bdc47a11377b5b",
+        "android_client_info": {
+          "package_name": "com.nikesh.jobportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606268850370-e09tjnmbgnv89riqlena3lsmfbiujuhs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP1MRzVwKbx4-doIpaxyJNXgG4--8XDzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606268850370-e09tjnmbgnv89riqlena3lsmfbiujuhs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
