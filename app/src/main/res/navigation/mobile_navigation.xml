@@ -8,12 +8,12 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.nikesh.jobportal.ui.home.HomeFragment"
-        tools:layout="@layout/fragment_home2" />
+        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.nikesh.jobportal.ui.dashboard.DashboardFragment"
-        tools:layout="@layout/fragment_dashboard2" />
+        tools:layout="@layout/fragment_dashboard" />
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.nikesh.jobportal.ui.profile.ProfileFragment"
@@ -26,5 +26,5 @@
     <fragment
         android:id="@+id/navigation_notification"
         android:name="com.nikesh.jobportal.ui.notifications.NotificationFragment"
-        tools:layout="@layout/fragment_notification" />
+        tools:layout="@layout/fragment_notifications" />
 </navigation>
