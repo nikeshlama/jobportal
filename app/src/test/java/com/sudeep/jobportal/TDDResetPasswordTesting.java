@@ -11,9 +11,9 @@ import org.mockito.stubbing.Answer;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
-public class TDDResetPasswordTesting {
+public class TDDJobeventtesting {
     @Test
-    public void ResetPasswordTestin(){
+    public void JobeventTestin(){
         FirebaseAuth auth = Mockito.mock(FirebaseAuth.class);
         final Task<Void> mockedAuth = Mockito.mock(Task.class);
         when(auth.sendPasswordResetEmail("sudeeptddtesting@gmail.com"))
