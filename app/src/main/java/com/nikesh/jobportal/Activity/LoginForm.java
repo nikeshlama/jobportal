@@ -37,21 +37,6 @@ public class LoginForm extends AppCompatActivity {
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     private CheckBox showPassword;
     ProgressDialog loadingBar;
-    //
-//    @Override
-//    protected void onStart() {
-//        super.onStart();
-//
-//        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-//        if(firebaseUser!=null)
-//        {
-//            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-//            startActivity(intent);
-//            finish();
-//
-//        }
-//    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
