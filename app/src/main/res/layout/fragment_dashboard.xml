@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="ui.dashboard.DashboardFragment">
+    tools:context=".ui.dashboard.DashboardFragment">
 
 
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
-        android:background="#008080"
+        android:background="#7EBCA3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
