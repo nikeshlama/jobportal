@@ -86,13 +86,13 @@
                     android:layout_width="161dp"
                     android:layout_height="60dp"
                     android:layout_weight="1"
-                    android:src="@drawable/contentwriting" />
+                    android:src="@drawable/website" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:textSize="18dp"
-                    android:text="Content writing"
+                    android:text="Website"
                     android:paddingBottom="10dp"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -136,13 +136,13 @@
                     android:layout_width="161dp"
                     android:layout_height="60dp"
                     android:layout_weight="1"
-                    android:src="@drawable/illustrator" />
+                    android:src="@drawable/contentwriting" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:textSize="18dp"
-                    android:text="Illustrator"
+                    android:text="Content Writing"
                     android:paddingBottom="10dp"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -192,7 +192,7 @@
                     android:textStyle="bold"
                     android:gravity="center"
                     android:textSize="18dp"
-                    android:text="Tutoring"
+                    android:text="Mobile Development"
                     android:paddingBottom="10dp"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -218,7 +218,7 @@
                     android:textStyle="bold"
                     android:gravity="center"
                     android:textSize="18dp"
-                    android:text="Web development"
+                    android:text="Database and Admin panel"
                     android:paddingBottom="10dp"
                     android:layout_height="wrap_content"/>
             </LinearLayout>

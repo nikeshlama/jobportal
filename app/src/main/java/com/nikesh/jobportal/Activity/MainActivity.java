@@ -57,15 +57,15 @@ public class MainActivity extends AppCompatActivity {
         contextOfApplication = getApplicationContext();
 
         circleImageView = findViewById(R.id.MainProfileImage);
-        searchBar = findViewById(R.id.TVSearch);
         SettingImage = findViewById(R.id.img_Setting);
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users").child(firebaseUser.getUid());
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("User").child(firebaseUser.getUid());
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 User user = dataSnapshot.getValue(User.class);
-                if(Objects.equals (user.getProfileImage (), "Default"))
+
+                if(user.getProfileImage().equals("Default"))
                     circleImageView.setImageResource(R.drawable.male);
                 else
                     Glide.with(getApplicationContext()).load(user.getProfileImage()).into(circleImageView);

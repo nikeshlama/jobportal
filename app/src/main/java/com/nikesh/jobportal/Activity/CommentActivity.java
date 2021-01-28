@@ -29,9 +29,6 @@ import java.util.HashMap;
 import java.util.List;
 
 public class CommentActivity extends AppCompatActivity {
-
-
-
     TextView like, noComments;
     EditText commentBox;
     ImageView btnLike,sendComment;
@@ -43,6 +40,7 @@ public class CommentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comment);
         getSupportActionBar().setTitle("Comment ");
+
         final String postId = getIntent().getStringExtra("PostId");
         like= findViewById(R.id.textViewLikeCount);
         btnLike= findViewById(R.id.btnLike2);
@@ -55,12 +53,13 @@ public class CommentActivity extends AppCompatActivity {
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         readLikes(postId);
-        readComments(postId);
+        readComments (postId);
         CheckLike(postId,btnLike);
         sendComment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 sendComments(postId);
+
             }
         });
         btnLike.setOnClickListener(new View.OnClickListener() {
@@ -96,10 +95,10 @@ public class CommentActivity extends AppCompatActivity {
     }
     private void readComments(String PostId)
     {
+        comments = new ArrayList<>();
+        comments.clear ();
         commentRecyclerView.setVisibility(View.VISIBLE);
         noComments.setVisibility(View.GONE);
-        comments = new ArrayList<>();
-        comments.clear();
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Activities").child(PostId).child("Comment");
         reference.addValueEventListener(new ValueEventListener () {
             @Override
