@@ -39,6 +39,8 @@
         <activity android:name=".Activity.CommentActivity"/>
         <activity android:name=".Activity.JobsActivity"/>
         <activity android:name=".Activity.SingleJobActivity"/>
+        <activity android:name=".Activity.EditProfileActivity"/>
+        <activity android:name=".Activity.MessageActivity"/>
     <activity android:name=".Activity.MainActivity"
         android:label="JobPortal"/>
 
