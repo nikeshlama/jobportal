@@ -1,13 +1,6 @@
 package com.nikesh.jobportal.Activity;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +8,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
@@ -24,7 +22,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.nikesh.jobportal.Adapter.HomeAdapter;
 import com.nikesh.jobportal.Adapter.JobAdapter;
 import com.nikesh.jobportal.Adapter.ProfileAdapter;
 import com.nikesh.jobportal.AllFunctions;
@@ -110,7 +107,7 @@ public class ProfileActivity extends AppCompatActivity {
                 AllFunctions allFunctions = new AllFunctions();
                 if (btnFollow.getText().equals("Follow"))
                 {
-                    allFunctions.FollowUser(firebaseUser.getUid(),userId);
+                   allFunctions.FollowUser(firebaseUser.getUid(),userId);
                 }
                 else
                 {
@@ -183,7 +180,7 @@ public class ProfileActivity extends AppCompatActivity {
     {
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users").child(userId);
-        reference.addValueEventListener(new ValueEventListener() {
+        reference.addValueEventListener(new ValueEventListener () {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 User user = dataSnapshot.getValue(User.class);
@@ -216,7 +213,7 @@ public class ProfileActivity extends AppCompatActivity {
     public void readFollowing (final String userId)
     {
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Follow").child(userId).child("Following");
-        reference.addValueEventListener(new ValueEventListener() {
+        reference.addValueEventListener(new ValueEventListener () {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 following.setText(dataSnapshot.getChildrenCount()+"");
@@ -233,7 +230,7 @@ public class ProfileActivity extends AppCompatActivity {
     public void readFollowers (final String userId)
     {
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Follow").child(userId).child("Followers");
-        reference.addValueEventListener(new ValueEventListener() {
+        reference.addValueEventListener(new ValueEventListener () {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 followers.setText(dataSnapshot.getChildrenCount()+"");
@@ -251,7 +248,7 @@ public class ProfileActivity extends AppCompatActivity {
         events.clear();
         jobs.clear();
         final DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Events");
-        reference.addValueEventListener(new ValueEventListener() {
+        reference.addValueEventListener(new ValueEventListener () {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot dataSnapshot1 :dataSnapshot.getChildren())
@@ -283,7 +280,7 @@ public class ProfileActivity extends AppCompatActivity {
         events.clear();
         jobs.clear();
         final DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Jobs");
-        reference.addValueEventListener(new ValueEventListener() {
+        reference.addValueEventListener(new ValueEventListener () {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot dataSnapshot1 :dataSnapshot.getChildren())
@@ -311,7 +308,7 @@ public class ProfileActivity extends AppCompatActivity {
     private void checkFollowing(final String userID, final Button button)
     {
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Follow").child(firebaseUser.getUid()).child("Following");
-        reference.addValueEventListener(new ValueEventListener() {
+        reference.addValueEventListener(new ValueEventListener () {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.child(userID).exists())
