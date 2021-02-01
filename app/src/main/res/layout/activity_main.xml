@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:background="#82ACF6"
+        android:background="#CDC5C5"
         android:layout_width="match_parent"
         app:layout_constraintTop_toTopOf="parent"
         android:gravity="center_vertical"
@@ -23,17 +23,7 @@
             android:layout_marginLeft="15dp"
             android:src="@drawable/male"
             android:layout_height="38dp"/>
-        <EditText
-            android:background="@color/colorWhite"
-            android:id="@+id/TVSearch"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:hint="Search"
-            android:layout_marginLeft="12dp"
-            android:textSize="15dp"
-            android:layout_toRightOf="@id/MainProfileImage"
-            android:layout_width="280dp"
-            android:layout_height="35dp"/>
+
         <ImageView
             android:id="@+id/img_Setting"
             android:layout_marginTop="3dp"

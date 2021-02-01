@@ -1,4 +1,5 @@
 package com.nikesh.jobportal.ui.profile;
+
 import android.app.DatePickerDialog;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -46,6 +47,7 @@ import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
 import com.nikesh.jobportal.Activity.MainActivity;
 import com.nikesh.jobportal.Model.User;
+import com.nikesh.jobportal.Model.Events;
 import com.nikesh.jobportal.R;
 
 import java.lang.reflect.Array;
@@ -87,7 +89,7 @@ public class ProfileFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-        reference = FirebaseDatabase.getInstance().getReference("Users").child(firebaseUser.getUid());
+        reference = FirebaseDatabase.getInstance().getReference("User").child(firebaseUser.getUid());
         eventImage = view.findViewById(R.id.showEventImage);
         addPhoto = view.findViewById(R.id.addPhoto);
         spinner = view.findViewById(R.id.profile_spinner);
