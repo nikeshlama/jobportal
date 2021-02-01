@@ -64,7 +64,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.Viewholder> {
        readLikes(event.getPostId(),holder.likeText);
        CountComments(event.getPostId(),holder.commentText);
         if (isValidContextForGlide(myContext)){
-            if(event.getEventImage().equals("Blank"))
+            if(event.getEventImage().equals("Default"))
             {
                 holder.imageView.setVisibility(View.GONE);
             }
@@ -75,7 +75,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.Viewholder> {
                 holder.userProfileImage.setImageResource(R.mipmap.ic_launcher);
 
             }
-            DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users").child(event.getUserId());
+            DatabaseReference reference = FirebaseDatabase.getInstance().getReference("User").child(event.getUserId());
             reference.addValueEventListener(new ValueEventListener () {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -83,7 +83,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.Viewholder> {
                     holder.country.setText(user.getCountry());
                     holder.fullName.setText(user.getFullname());
 
-                    if(Objects.equals (user.getProfileImage (), "Default"))
+
+                    if(user.getProfileImage().equals("Default"))
                     {
                         holder.userProfileImage.setImageResource(R.drawable.male);
 
