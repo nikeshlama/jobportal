@@ -34,10 +34,10 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
-import com.theakatsuki.hiredevelopers.Adapter.MessageAdapter;
-import com.theakatsuki.hiredevelopers.Model.Chat;
-import com.theakatsuki.hiredevelopers.Model.User;
-import com.theakatsuki.hiredevelopers.R;
+import com.nikesh.jobportal.Adapter.MessageAdapter;
+import com.nikesh.jobportal.Model.Chat;
+import com.nikesh.jobportal.Model.User;
+import com.nikesh.jobportal.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -95,7 +95,7 @@ public class MessageActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(com.theakatsuki.hiredevelopers.Activity.MessageActivity.this, "There was error sending the message", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(com.nikesh.jobportal.Activity.MessageActivity.this, "There was error sending the message", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -109,7 +109,7 @@ public class MessageActivity extends AppCompatActivity {
         });
         storageReference = FirebaseStorage.getInstance().getReference("MessageImages");
         firebaseUser= FirebaseAuth.getInstance().getCurrentUser();
-        refrences= FirebaseDatabase.getInstance().getReference("Users").child(userid);
+        refrences= FirebaseDatabase.getInstance().getReference("User").child(userid);
         refrences.addValueEventListener(new ValueEventListener () {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -221,7 +221,7 @@ public class MessageActivity extends AppCompatActivity {
                     }
                     else
                     {
-                        Toast.makeText(com.theakatsuki.hiredevelopers.Activity.MessageActivity.this, "Failed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(com.nikesh.jobportal.Activity.MessageActivity.this, "Failed", Toast.LENGTH_SHORT).show();
                         progressBar.setVisibility(View.GONE);
 
                     }
@@ -229,7 +229,7 @@ public class MessageActivity extends AppCompatActivity {
             }).addOnFailureListener(new OnFailureListener () {
                 @Override
                 public void onFailure(@NonNull Exception e) {
-                    Toast.makeText(com.theakatsuki.hiredevelopers.Activity.MessageActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(com.nikesh.jobportal.Activity.MessageActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             });
         }

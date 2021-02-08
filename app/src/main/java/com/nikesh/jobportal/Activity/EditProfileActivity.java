@@ -181,7 +181,7 @@ public class EditProfileActivity extends AppCompatActivity {
                     }
                     if(list.size()==0)
                     {
-                        Toast.makeText(com.theakatsuki.hiredevelopers.Activity.EditProfileActivity.this, "Please select a Interested development field to be updated", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(com.nikesh.jobportal.Activity.EditProfileActivity.this, "Please select a Interested development field to be updated", Toast.LENGTH_SHORT).show();
                         return;
                     }
 
@@ -210,7 +210,7 @@ public class EditProfileActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(com.theakatsuki.hiredevelopers.Activity.EditProfileActivity.this, "Passwords didn't match", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(com.nikesh.jobportal.Activity.EditProfileActivity.this, "Passwords didn't match", Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -271,7 +271,7 @@ public class EditProfileActivity extends AppCompatActivity {
                         hashMap.put("profileImage",mUri);
                         reference.child("Users").child(firebaseUser.getUid()).updateChildren(hashMap);
                         progressBar.setVisibility(View.GONE);
-                        Toast.makeText(com.theakatsuki.hiredevelopers.Activity.EditProfileActivity.this, "Uploaded", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(com.nikesh.jobportal.Activity.EditProfileActivity.this, "Uploaded", Toast.LENGTH_SHORT).show();
                     }
                     else
                     {
@@ -286,7 +286,7 @@ public class EditProfileActivity extends AppCompatActivity {
             });
         }
         else {
-            Toast.makeText(com.theakatsuki.hiredevelopers.Activity.EditProfileActivity.this, "Profile Uploaded", Toast.LENGTH_SHORT).show();
+            Toast.makeText(com.nikesh.jobportal.Activity.EditProfileActivity.this, "Profile Uploaded", Toast.LENGTH_SHORT).show();
         }
 
     }

@@ -67,7 +67,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ViewHold
            holder.userProfileImage.setImageResource(R.mipmap.ic_launcher);
 
        }
-       DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users").child(event.getUserId());
+       DatabaseReference reference = FirebaseDatabase.getInstance().getReference("User").child(event.getUserId());
        reference.addValueEventListener(new ValueEventListener () {
            @Override
            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -75,7 +75,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ViewHold
                holder.country.setText(user.getCountry());
                holder.fullName.setText(user.getFullname());
 
-               if(user.getProfileImage().equals("default"))
+               if(user.getProfileImage().equals("Default"))
                {
                    holder.userProfileImage.setImageResource(R.drawable.male);
 
