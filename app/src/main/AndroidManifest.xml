@@ -20,8 +20,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.SettingActivity"></activity>
-        <activity android:name=".Activity.ProfileActivity" />
         <activity android:name=".Activity.ImageSliderActivity" />
         <activity android:name=".Activity.SplashActivity">
         <intent-filter>
@@ -43,6 +41,9 @@
         <activity android:name=".Activity.MessageActivity"/>
         <activity android:name=".Activity.HireActivity"/>
         <activity android:name=".Activity.NotificationActivity"/>
+        <activity android:name=".Activity.AddBidActivity"/>
+        <activity android:name=".Activity.ProfileActivity" />
+        <activity android:name=".Activity.SettingActivity"></activity>
     <activity android:name=".Activity.MainActivity"
         android:label="JobPortal"/>
 

@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class NotificationsFragment extends Fragment {
+public class NotificationFragment extends Fragment {
 
     private RecyclerView recyclerView;
     List<Hire> hireList;

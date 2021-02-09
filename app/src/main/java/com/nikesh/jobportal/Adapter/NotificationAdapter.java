@@ -51,7 +51,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         final Hire hire  = hireList.get(position);
         if(hire.getInvitation().equals(true))
         {
-            DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users").child(hire.getUserId());
+            DatabaseReference reference = FirebaseDatabase.getInstance().getReference("User").child(hire.getUserId());
             reference.addValueEventListener(new ValueEventListener () {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
