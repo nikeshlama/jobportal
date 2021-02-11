@@ -12,7 +12,7 @@ import org.mockito.stubbing.Answer;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
-public class TDDRegistrationTesting {
+public class TDDRegistrationtesting {
     @Test
     public void RegistrationUserTesting(){
         FirebaseAuth auth = Mockito.mock(FirebaseAuth.class);

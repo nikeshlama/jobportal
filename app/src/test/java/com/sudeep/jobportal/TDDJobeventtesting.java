@@ -12,7 +12,7 @@ import org.mockito.stubbing.Answer;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
-public class TDDaddJobtesting {
+public class TDDJobeventtesting {
     @Test
     public void addjobTesting(){
         fragmentManager.popBackStack(addjobTesting();Fragment.STACK_NAME, 0);
