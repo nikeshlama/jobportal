@@ -33,7 +33,7 @@ import static org.hamcrest.Matchers.allOf;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class Addjobeventtest {
+public class Addjobevent {
 
     @Rule
     public ActivityTestRule<jobeventActivity> mActivityTestRule = new ActivityTestRule<>(jobeventActivity.class);
