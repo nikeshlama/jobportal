@@ -51,7 +51,7 @@ public class BidAdapter extends RecyclerView.Adapter<BidAdapter.ViewHolder> {
         final Bid bid  = bids.get(position);
         holder.description.setText(bid.getDescription());
         holder.price.setText("$ "+bid.getPayment()+" in "+bid.getDelivery()+" days");
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users").child(bid.getUserId());
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("User").child(bid.getUserId());
         reference.addValueEventListener(new ValueEventListener () {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

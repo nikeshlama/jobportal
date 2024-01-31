@@ -179,7 +179,7 @@ public class ProfileActivity extends AppCompatActivity {
     public void readProfile(final String userId)
     {
 
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users").child(userId);
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("User").child(userId);
         reference.addValueEventListener(new ValueEventListener () {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
